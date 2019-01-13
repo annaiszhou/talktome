@@ -5,7 +5,10 @@ var express = require("express"),
     expressSanitizer = require("express-sanitizer"),
     methodOverride = require('method-override');
     
-mongoose.connect("mongodb://localhost:27017/diary_with_summary_app", {useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/diary_with_summary_app", {useNewUrlParser: true});
+mongoose.connect("mongodb://anna:yyqx1128@ds255784.mlab.com:55784/diary", {useNewUrlParser: true});
+// anna yyqx1128
+// mongodb://<dbuser>:<dbpassword>@ds255784.mlab.com:55784/diary
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressSanitizer());
 app.set("view engine", "ejs");
