@@ -1,0 +1,38 @@
+<% include partials/header %>
+    <div class="ui main text container">
+   	    <div class="ui huge header"><%=diary.title%></div>
+        <div class="ui top attached segment">
+	        <div class="item">
+	           <img class="ui centered rounded image" src="<%= diary.image %>">
+	            <div class="content">
+	                <br>
+	                <div class="meta">
+    	                <span><strong>Date: </strong><%= diary.created.toDateString() %></span>
+	                </div>
+	                <br>
+	                <div class="summary">
+    	                <span><strong>Summary: </strong><%= diary.summary %></span>
+	                </div>
+	                <br>
+            	    <div class="description">
+            	        <p><strong>Diary: </strong><%- diary.body %></p>
+            	    </div>
+            	    <br>
+	            </div>
+            </div>
+            <a href="/diaries/<%=diary._id%>/edit" class="ui yellow basic button">Update Diary</a>
+            <form style="display: inline" method="POST" action="/diaries/<%=diary._id%>?_method=DELETE">
+                <button class="ui red basic button" type="submit">Delete Diary</button>
+            </form>
+        </div>
+        
+    </div>
+    
+
+
+<% include partials/footer %>
+
+ 
+
+
+

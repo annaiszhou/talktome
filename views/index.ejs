@@ -1,0 +1,33 @@
+<% include partials/header %>
+   <div class="ui main text container">
+   	<div class="ui huge header">Diary</div>
+    <div class="ui top attached segment">
+<div class="ui divided items">
+	<% diaries.forEach(function(diary){ %>
+	 <div class="item">
+	    <div class="image">
+	      <img src="<%= diary.image %>">
+	    </div>
+	    <div class="content">
+	      <a class="header"><%= diary.title %></a>
+	      <div class="meta">
+	        <span class="cinema"><%= diary.created.toDateString() %></span>
+	      </div>
+	      <div class="description">
+	        <p><%= diary.summary %></p>
+	      </div>
+	      <div class="extra">
+	        <a href="/diaries/<%=diary._id %>" class="ui floated basic red button">
+	          Read More
+	        </a>
+	      </div>
+	    </div>
+	  </div>
+	<% }); %>
+</div>
+</div>
+    
+  </div>
+<% include partials/footer %>
+
+ 

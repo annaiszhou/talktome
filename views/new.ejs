@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+<div class="ui main text container segment new-div">
+    <div class="ui huge header">New Diary</div>
+    <form class="ui form" action="/diaries" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="diary[title]" autocomplete="off">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <div id="image-field">
+                <label id="buttonLocal" class="ui black basic button">Local</label>
+                <label id="buttonUrl" class="ui black basic button">Url (recommended)</label>
+            </div>
+            <input id="UrlText" hidden="true" type="text" name="diary[image]" autocomplete="off">
+            <input type="file" name="diary[image]" id="upload" autocomplete="off" hidden="true">
+        </div>
+        <div class="field">
+            <label>Summary</label>
+            <input type="text" name="diary[summary]" autocomplete="off">
+        </div>
+        <div class="field">
+            <label>Diary Content</label>
+            <textarea name="diary[body]" required></textarea>
+        </div>
+        <button class="ui big red basic button">Create Diary</button>
+    </form>
+</div>
+<% include partials/footer %>
+
+<!--{ "_id" : ObjectId("5c3addc4dd7aa138a9f4d247"), "title" : "Everyone is a chief!", "image" : "", "summary" : "Two delicious traditional Chinese food.", "body" : "Today, I tried to cook two new dishes. One is steam pork with rice powder, and the other one is noodle with peanut butter. They are both delicious and bring me a great sense of proudness.", "created" : ISODate("2019-01-13T06:42:12.135Z"), "__v" : 0 }-->

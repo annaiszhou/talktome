@@ -1,0 +1,25 @@
+<% include partials/header %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Edit Diary</div>
+    <form class="ui form" action="/diaries/<%=diary._id%>?_method=PUT" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" value="<%= diary.title %>" name="diary[title]">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input type="text" value="<%= diary.image %>" name="diary[image]">
+        </div>
+        <div class="field">
+            <label>Summary</label>
+            <input type="text" value="<%= diary.summary %>" name="diary[summary]">
+        </div>
+        <div class="field">
+            <label>Diary Content</label>
+            <textarea name="diary[body]" required><%= diary.body %></textarea>
+        </div>
+        <button class="ui big violet basic button">Update Diary</button>
+    </form>
+</div>
+<% include partials/footer %>

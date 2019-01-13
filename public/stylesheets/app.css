@@ -1,0 +1,76 @@
+body {
+    background-color: #F08080;
+    }
+
+/*.ui.inverted.menu {*/
+/*    background-color: #F08080;*/
+/*}*/
+
+#image-field {
+     margin: 10px auto 10px auto;
+}
+
+.welcome {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 90px;
+    text-align: center;
+}
+
+.app-description {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.welcome-button {
+    margin: 5% 0 0 86%;
+    display: inline-block;
+}
+
+.ui.orange.basic.button {
+    margin: auto auto;
+    text-align: center;
+}
+
+.welcome-div {
+    margin:10% auto 20% auto;
+    height:50%;
+    width:50%;
+    vertical-align:middle;
+    line-height:200px;
+}
+
+.welcome-body {
+    background-attachment: scroll;
+    background-color: #FFFFFF;
+    background-image: url(https://images.unsplash.com/photo-1522836924445-4478bdeb860c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.container {
+    margin-top: 7em;
+}
+
+
+.wireframe {
+    margin-top: 2em;
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+i.icon {
+    font-size: 2em;
+}
+    
